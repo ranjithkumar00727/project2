@@ -1,0 +1,1 @@
+change net banking to mobile banking in doc
