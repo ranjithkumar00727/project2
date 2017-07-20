@@ -2,8 +2,8 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
-   <groupId>org.javacodegeeks</groupId>
-   <artifactId>Sample1</artifactId>
+   <groupId>hotel</groupId>
+   <artifactId>hotel</artifactId>
    <version>4.0.1</version>
    <packaging>jar</packaging>
    <dependencies>
@@ -13,8 +13,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
          <version>4.11</version>
       </dependency>
     </dependencies>
-<!-- My repos changes by sanjay -->
-<!-- sanjay is changing here for demo testing of versions-->
+<!-- My repos changes by ranjith -->
+<!-- ranjith is changing here for demo testing of versions-->
 	<repositories>
 	<repository>
 	    <id>java.net</id>
@@ -36,17 +36,17 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
     <finalName>${project.artifactId}-${project.version}</finalName>
     <testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
-    <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
-    <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
-    <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
+    <sourceDirectory>${project.basedir}/hotel/</sourceDirectory>
+    <scriptSourceDirectory>hotel/scripts</scriptSourceDirectory>
+    <testSourceDirectory>${project.basedir}/hotel/</testSourceDirectory>
     <resources>
       <resource>
-        <directory>${project.basedir}/src/main/resources</directory>
+        <directory>${project.basedir}/hotel</directory>
       </resource>
     </resources>
     <testResources>
       <testResource>
-        <directory>${project.basedir}/src/test/resources</directory>
+        <directory>${project.basedir}/hotel</directory>
       </testResource>
     </testResources>
     <pluginManagement>
